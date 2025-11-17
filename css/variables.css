@@ -1,0 +1,42 @@
+:root {
+
+
+
+    --background-color: #F8F4EC;
+
+    /* === Button === */
+    --btn-bg-color: #FF8FB7;
+    --btn-font-color: #43334C;
+    --btn-radius: 5rem;
+    --btn-height: 10vh;
+    --btn-width: 20vw;
+    --btn-hover: #E83C91;
+
+    /* === Spacing === */
+    --padding: 1.0rem;
+    --margin: 1.5rem;
+    --section-padding: 7.5rem 2.5rem;
+    --gap: rem;
+
+    /* === Colors === */
+    --color: #43334C;
+    --hover-color: #FF8FB7;
+    --border-color: #FF8FB7;
+    --pink-color: #FF8FB7;
+    --dark-purple-color: #43334C;
+
+    /* === Fonts === */
+    --font-family: "Inter", sans-serif;
+    --font-size-lg: 1.5rem;
+    --font-size-md: 1rem;
+    --font-size-sm: 0.75rem;
+
+    --transition: 0.2s ease-in-out;
+
+    /* === Cards === */
+    --card-radius: 2rem;
+    --card-img-radius: 1rem;
+    --card-btn-width: 15vw;
+
+
+}
