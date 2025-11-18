@@ -1,290 +1,297 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: var(--font-family);
-    color: var(--color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: var(--font-family);
+  color: var(--color);
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+img {
+  width: 300px;
+  height: 150px;
+  object-fit: cover;
+}
+
 body {
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 /* ---------------- Header ---------------- */
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-    padding: var(--padding);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    backdrop-filter: blur(10px);
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  padding: var(--padding);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 nav a {
-    color: var(--color);
-    margin-left: var(--margin);
-    font-weight: bold;
-    font-size: var(--font-size-md);
-    transition: var(--transition);
+  color: var(--color);
+  margin-left: var(--margin);
+  font-weight: bold;
+  font-size: var(--font-size-md);
+  transition: var(--transition);
 }
 
 nav a:hover {
-    color: var(--hover-color);
+  color: var(--hover-color);
 }
 
 /* ---------------- Home Section ---------------- */
 
 .home {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: var(--section-padding);
-    gap: var(--gap);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--section-padding);
+  gap: var(--gap);
 }
 
 .home-description {
-    color: var(--color);
+  color: var(--color);
 }
 
 .home-description h1 {
-    margin-bottom: 0.5rem;
-    transition: var(--transition);
+  margin-bottom: 0.5rem;
+  transition: var(--transition);
 }
 
 .home-description h2 {
-    transition: var(--transition);
+  transition: var(--transition);
 }
 
-.home-description h1:hover, .home-description h2:hover {
-    transform: scale(1.05);
-    color: var(--pink-color);
+.home-description h1:hover,
+.home-description h2:hover {
+  transform: scale(1.05);
+  color: var(--pink-color);
 }
 
 .home-description p {
-    width: 30rem;
-    margin-top: var(--margin);
+  width: 30rem;
+  margin-top: var(--margin);
 }
 
 .download-btn {
-    background-color: var(--btn-bg-color);
-    border: none;
-    color: var(--btn-font-color);
-    padding: var(--padding);
-    width: var(--btn-width);
-    border-radius: var(--btn-radius);
-    margin-top: var(--margin);
-    font-weight: bold;
-    font-size: var(--font-size-lg);
-    transition: var(--transition);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: var(--btn-bg-color);
+  border: none;
+  color: var(--btn-font-color);
+  padding: var(--padding);
+  width: var(--btn-width);
+  border-radius: var(--btn-radius);
+  margin-top: var(--margin);
+  font-weight: bold;
+  font-size: var(--font-size-lg);
+  transition: var(--transition);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 
 .download-btn:hover {
-    background-color: var(--btn-hover);
-    color: white;
-    transform: scale(1.05);
+  background-color: var(--btn-hover);
+  color: white;
+  transform: scale(1.05);
 }
 
-
-
 .personal-photo {
-    width: 30rem;
-    height: 30rem;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid var(--border-color);
-    transition: var(--transition);
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border-color);
+  transition: var(--transition);
 }
 
 .personal-photo:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
-
 
 /* ---------------- Cards Section ---------------- */
 
-.certificates, .projects, .volunteering {
-    padding: var(--section-padding);
-    padding-top: 0;
-    padding-bottom: 0;
+.certificates,
+.projects,
+.volunteering {
+  padding: var(--section-padding);
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-
 .cards-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    gap: var(--gap);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--gap);
 }
 
 .card {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;    
-    padding: var(--padding);
-    margin: var(--margin);
-    width: 90%;
-    text-align: center;
-    transition: var(--transition);
-    border-radius: var(--card-radius);
-    gap: var(--gap);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: var(--padding);
+  margin: var(--margin);
+  width: 90%;
+  text-align: center;
+  transition: var(--transition);
+  border-radius: var(--card-radius);
+  gap: var(--gap);
+  margin-bottom: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .card img {
-    width: 100%;
-    border-radius: var(--card-img-radius);
-    border: 1px solid var(--border-color);
-    margin-bottom: var(--margin);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 100%;
+  border-radius: var(--card-img-radius);
+  border: 1px solid var(--border-color);
+  margin-bottom: var(--margin);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .card p {
-    margin-top: var(--margin);
-    text-align: center;
+  margin-top: var(--margin);
+  text-align: center;
 }
 
 .show-btn {
-    background-color: var(--btn-bg-color);
-    border: none;
-    border-radius: var(--btn-radius);
-    color: var(--color);
-    padding: var(--padding);
-    margin-top: var(--margin);
-    font-size: var(--font-size-md);
-    font-weight: bold;
-    transition: var(--transition);
-    width: var(--card-btn-width);
+  background-color: var(--btn-bg-color);
+  border: none;
+  border-radius: var(--btn-radius);
+  color: var(--color);
+  padding: var(--padding);
+  margin-top: var(--margin);
+  font-size: var(--font-size-md);
+  font-weight: bold;
+  transition: var(--transition);
+  width: var(--card-btn-width);
 }
 
 .show-btn:hover {
-    background-color: var(--btn-hover);
-    transform: scale(1.05);
-    color: white;
+  background-color: var(--btn-hover);
+  transform: scale(1.05);
+  color: white;
 }
 
 /* ------- fieldset ---------- */
 
 fieldset {
-    border-bottom: none;
-    border-right: none;
-    border-left: none;
-    border-color: var(--btn-bg-color);
+  border-bottom: none;
+  border-right: none;
+  border-left: none;
+  border-color: var(--btn-bg-color);
 }
 
 legend {
-    text-align: center;
-    padding: var(--padding);
-    color: var(--color);
-    font-weight: bold;
-    font-size: var(--font-size-lg);
+  text-align: center;
+  padding: var(--padding);
+  color: var(--color);
+  font-weight: bold;
+  font-size: var(--font-size-lg);
 }
 
 /* ---------------------------------Volunteering Cards------------------------------------------- */
 
 .vol-flex {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap);
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
 }
 
 .vol-card {
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    padding: var(--padding);
-    margin: var(--margin);
-    border-radius: var(--card-radius);
-    align-items: center;
-    transition: var(--transition);
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: var(--padding);
+  margin: var(--margin);
+  border-radius: var(--card-radius);
+  align-items: center;
+  transition: var(--transition);
 }
 
 .vol-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .vol-card p {
-    width: 30rem;
-    margin-top: var(--margin);
+  width: 30rem;
+  margin-top: var(--margin);
 }
 
 .img-grid {
-    width: 70%;
-    display: grid;
-    justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  width: 70%;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
 }
 
 .img-grid img {
-    width: 75%;
-    margin-bottom: 1rem;
-    border-radius: var(--card-img-radius);
-    border: 1px solid var(--border-color);
-    transition: var(--transition);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 75%;
+  margin-bottom: 1rem;
+  border-radius: var(--card-img-radius);
+  border: 1px solid var(--border-color);
+  transition: var(--transition);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .img-grid img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /* -------------------------------- Footer ------------------------------------------ */
 
 footer {
-    background-color: var(--pink-color);
-    padding: var(--padding);
-    text-align: center;
+  background-color: var(--pink-color);
+  padding: var(--padding);
+  text-align: center;
 }
 
 .contact-txt {
-    margin-bottom: var(--margin);
+  margin-bottom: var(--margin);
 }
 
 .contact a {
-    transition: var(--transition);
+  transition: var(--transition);
 }
 
 .contact a:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .footer-copy {
-    margin-top: 1rem;
-    font-size: var(--font-size-sm);
+  margin-top: 1rem;
+  font-size: var(--font-size-sm);
 }
-
 
 /* ==================================================== */
 
 /* ===================== Mobile (max 600px) ===================== */
 
 @media (max-width: 600px) {
-
-:root {
+  :root {
     --font-size-lg: 1.2rem;
     --font-size-md: 0.9rem;
     --font-size-sm: 0.7rem;
     --btn-width: 60vw;
     --btn-height: 7vh;
     --card-btn-width: 40vw;
-}
+  }
 
   header nav a {
     margin-left: 0.8rem;
     font-size: 0.9rem;
   }
-
 
   .home {
     flex-direction: column;
@@ -300,7 +307,6 @@ footer {
     width: 100%;
   }
 
-
   .cards-grid {
     grid-template-columns: 1fr;
   }
@@ -309,7 +315,6 @@ footer {
     width: 100%;
     margin: 1rem 0;
   }
-
 
   .vol-card {
     flex-direction: column;
@@ -325,18 +330,14 @@ footer {
     width: 100%;
   }
 
-  
   footer {
     padding: 2rem 1rem;
   }
-
 }
-
 
 /* ===================== Tablet (600px - 992px) ===================== */
 
 @media (min-width: 600px) and (max-width: 992px) {
-
   .home {
     flex-direction: column;
     text-align: center;
@@ -368,5 +369,4 @@ footer {
   .vol-card p {
     width: 90%;
   }
-
 }
