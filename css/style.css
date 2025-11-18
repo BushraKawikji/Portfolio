@@ -80,7 +80,7 @@ nav a:hover {
     background-color: var(--btn-bg-color);
     border: none;
     color: var(--btn-font-color);
-    height: var(--btn-height);
+    padding: var(--padding);
     width: var(--btn-width);
     border-radius: var(--btn-radius);
     margin-top: var(--margin);
@@ -262,4 +262,111 @@ footer {
 .footer-copy {
     margin-top: 1rem;
     font-size: var(--font-size-sm);
+}
+
+
+/* ==================================================== */
+
+/* ===================== Mobile (max 600px) ===================== */
+
+@media (max-width: 600px) {
+
+:root {
+    --font-size-lg: 1.2rem;
+    --font-size-md: 0.9rem;
+    --font-size-sm: 0.7rem;
+    --btn-width: 60vw;
+    --btn-height: 7vh;
+    --card-btn-width: 40vw;
+}
+
+  header nav a {
+    margin-left: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .personal-photo {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .home-description p {
+    width: 100%;
+  }
+
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+
+  .vol-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .img-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vol-card p {
+    width: 100%;
+  }
+
+  
+  footer {
+    padding: 2rem 1rem;
+  }
+
+}
+
+
+/* ===================== Tablet (600px - 992px) ===================== */
+
+@media (min-width: 600px) and (max-width: 992px) {
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .personal-photo {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .home-description p {
+    width: 90%;
+    margin: auto;
+  }
+
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .vol-card {
+    flex-direction: column;
+  }
+
+  .img-grid {
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .vol-card p {
+    width: 90%;
+  }
+
 }
