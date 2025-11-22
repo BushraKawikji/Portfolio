@@ -1,330 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Font Style -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="css/variables.css" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#projects">Projects</a>
-        <a href="#volunteering">Volunteering</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
 
-    <section class="home" id="home">
-      <div class="img-container">
-        <img
-          src="assets/images/personal-photo.jpg"
-          alt="personal photo"
-          class="personal-photo"
-        />
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Bushra Qaweqji" />
+  <meta name="description"
+    content="A professional software engineer and full-stack developer portfolio showcasing experiences, projects, skills, and certificates." />
+  <meta name="keywords" content="portfolio, software engineer, designer, ui, ux, it" />
+
+  <!-- Font Style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#education">Education</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <!----------------------------------------- Hero Section ----------------------------------------->
+
+  <section class="home" id="home">
+    <div class="img-container">
+      <img src="assets/images/personal-photo.jpg" alt="personal photo" class="personal-photo" />
+    </div>
+
+    <div class="home-description">
+      <small>Hello, This is</small>
+      <h1>Bushra Abdel-Salam Qaweqji</h1>
+      <h2>Full Stack Web Developer</h2>
+      <p>
+        I bring engineering precision together with elegant design—crafting digital experiences that feel intuitive and
+        refined.
+      </p>
+      <a href="assets/files/BushraQaweqjiCv.pdf" target="_blank" download><button class="download-btn">Download
+          CV</button></a>
+    </div>
+  </section>
+
+  <!----------------------------------------- Education Section ----------------------------------------->
+
+  <section class="education" id="education">
+    <div class="education-card">
+      <h2><i class="fa-solid fa-graduation-cap"></i>Education</h2>
+      <h3>The Hashemite University</h3>
+      <h4>B.Sc. in Software Engineering | 2021 - 2025</h4>
+      <h4>GPA: 3.84 <span class="Highlight"><mark>(First in Cohort)</mark></span></h4>
+    </div>
+  </section>
+
+  <!---------------------------------------- Certificates Section ---------------------------------------->
+
+  <section class="certificates" id="certificates">
+    <h2>Certificates</h2>
+    <div class="cards-flex">
+      <div class="card">
+        <img src="assets/images/certificates/java-certificate.png" alt="" />
+        <h4>
+          Java Pathway |
+          <span style="color: rgb(223, 4, 4)">HTU<sup style="color: rgb(223, 4, 4)">x</sup></span>
+        </h4>
+        <a href="https://www.credential.net/f797895e-d76e-4dab-8054-9c220ad30c9f#acc.SKxEqWRP" target="_blank"><button
+            class="show-btn">Show Certificate</button></a>
       </div>
 
-      <div class="home-description">
-        <h1>Bushra Abdel-Salam Qaweqji</h1>
-        <h2>Full Stack Web Developer</h2>
-        <p>
-          A fresh graduate from The Hashemite University, Ranked
-          <span style="font-weight: bolder">First in the class</span> with a GPA
-          of <span style="font-weight: bolder">3.84</span>, and a Full Stack
-          Developer Trainee at
-          <span style="color: rgb(255, 132, 0); font-weight: bold"
-            >Orange Coding School</span
-          >. Experienced in building responsive and user-friendly interfaces
-          using HTML, CSS, and JavaScript, and in developing dynamic web
-          applications with PHP and Laravel. Known for quick learning,
-          adaptability, and a strong focus on creating clean, user-centered
-          solutions. Actively seeking opportunities to apply skills, grow
-          professionally, and contribute to meaningful projects.
-        </p>
-        <a href="assets/files/BushraQaweqjiCv.pdf" target="_blank" download
-          ><button class="download-btn">Download CV</button></a
-        >
+      <div class="card">
+        <img src="assets/images/certificates/html-certificate.png" alt="" />
+        <h4>HTML | <span style="color: rgb(255, 132, 0)">Orange</span></h4>
+        <a href="https://coursat.orange.jo/mod/customcert/view.php?id=198&downloadown=1" target="_blank"><button
+            class="show-btn">Show Certificate</button></a>
       </div>
-    </section>
-
-    <!---------------------------------------- Certificates Section ---------------------------------------->
-    <fieldset>
-      <legend>Certificates</legend>
-    </fieldset>
-
-    <section class="certificates" id="certificates">
-      <div class="cards-grid">
-        <div class="card">
-          <img src="assets/images/certificates/java-certificate.png" alt="" />
-          <h4>
-            Java Pathway |
-            <span style="color: rgb(223, 4, 4)">HTU<sup>x</sup></span>
-          </h4>
-          <p>
-            A practical Java course focused on core programming concepts, with
-            strong emphasis on Object-Oriented Programming (OOP) and software
-            testing. The track builds solid foundations in Java syntax,
-            problem-solving, and writing clean, structured code through hands-on
-            exercises and real applications.
-          </p>
-          <a
-            href="https://www.credential.net/f797895e-d76e-4dab-8054-9c220ad30c9f#acc.SKxEqWRP"
-            target="_blank"
-            ><button class="show-btn">Show Certificate</button></a
-          >
-        </div>
-
-        <div class="card">
-          <img src="assets/images/certificates/html-certificate.png" alt="" />
-          <h4>HTML | <span style="color: rgb(255, 132, 0)">Orange</span></h4>
-          <p>
-            A foundational course covering the essentials of HTML structure,
-            tags, semantic elements, and page layout, with practical exercises
-            focused on building clean and well-organized web pages.
-          </p>
-          <a
-            href="https://coursat.orange.jo/mod/customcert/view.php?id=198&downloadown=1"
-            target="_blank"
-            ><button class="show-btn">Show Certificate</button></a
-          >
-        </div>
-
-        <div class="card">
-          <img src="assets/images/certificates/UXUI-certificate.png" alt="" />
-          <h4>UI/UX | Zain Zinc</h4>
-          <p>
-            A 10-hour hands-on workshop covering the fundamentals of UI/UX
-            design, focusing on transforming ideas into interactive prototypes
-            using Figma and FigJam, with practical exercises in wireframing,
-            user flows, and interface design.
-          </p>
-          <button class="show-btn">Show Certificate</button>
-        </div>
-
-        <div class="card">
-          <img src="assets/images/certificates/sigma-certificate.png" alt="" />
-          <h4>UI/UX | Sigma Agency</h4>
-          <p>
-            A 30-hour practical training program covering the foundations of
-            User Interface (UI) and User Experience (UX) design, including
-            research, wireframing, prototyping, and creating user-centered
-            digital experiences.
-          </p>
-          <a
-            href="https://drive.google.com/file/d/1_x3EaERXVka9QqFRmLOxe8lMficftZEL/view?usp=drive_link"
-            target="_blank"
-            ><button class="show-btn">Show Certificate</button></a
-          >
-        </div>
-
-        <div class="card">
-          <img src="assets/images/certificates/css-certificate.png" alt="" />
-          <h4>CSS | <span style="color: rgb(255, 132, 0)">Orange</span></h4>
-          <p>
-            A practical course focused on styling web pages using CSS, covering
-            layouts, colors, typography, responsive design, and creating
-            visually appealing, well-structured user interfaces.
-          </p>
-          <a
-            href="https://coursat.orange.jo/mod/customcert/view.php?id=191&downloadown=1"
-            target="_blank"
-            ><button class="show-btn">Show Certificate</button></a
-          >
-        </div>
+      <div class="card">
+        <img src="assets/images/certificates/css-certificate.png" alt="" />
+        <h4>CSS | <span style="color: rgb(255, 132, 0)">Orange</span></h4>
+        <a href="https://coursat.orange.jo/mod/customcert/view.php?id=191&downloadown=1" target="_blank"><button
+            class="show-btn">Show Certificate</button></a>
       </div>
-    </section>
 
-    <!---------------------------------------- Projects Section ---------------------------------------->
-    <fieldset>
-      <legend>Projects</legend>
-    </fieldset>
-
-    <section class="projects" id="projects">
-      <div class="cards-grid">
-        <div class="card">
-          <img src="assets/images/Projects/masar-project.png" alt="" />
-          <h4>Masar Project</h4>
-          <p>
-            Masar is a
-            <span style="font-weight: bold">Flutter-based application</span> for
-            managing vehicle licensing and driving exam services. It enables
-            users to book theoretical and practical exam appointments, issue a
-            digital driving license, renew expired licenses, and complete
-            payments through a secure payment system. The app focuses on a
-            smooth, user-friendly experience with responsive design, real-time
-            updates, and efficient workflow.
-          </p>
-          <a href="https://github.com/lanaThaher/masarApp.git" target="_blank"
-            ><button class="show-btn">Show Project</button></a
-          >
-        </div>
-
-        <div class="card">
-          <img src="assets/images/Projects/khazanti-project.png" alt="" />
-          <h4>Khazanti Project</h4>
-          <p>
-            Khazanati is a
-            <span style="font-weight: bold">UI/UX design</span> project for a
-            mobile app that helps users organize their wardrobe and create
-            outfit combinations. The app allows users to browse ready-made
-            outfit ideas, save favorite looks, and easily coordinate their
-            clothes. The design focuses on simplicity, clarity, and a smooth
-            user experience to make daily outfit planning easier and more
-            enjoyable.
-          </p>
-          <a
-            href="https://www.figma.com/design/msWy5dwFWcIzlKZAUyQ8aR/Khazanti?node-id=0-1&t=zMQTyl6K2Vz6KS9F-1"
-            target="_blank"
-            ><button class="show-btn">Show Project</button></a
-          >
-        </div>
-
-        <div class="card">
-          <img src="assets/images/Projects/petopia-project.png" alt="" />
-          <h4>Petopia Project</h4>
-          <p>
-            Petopia is a
-            <span style="font-weight: bold">Web design </span>project created
-            for an online platform that sells essential products for pets. The
-            design includes three main interfaces: a user interface for browsing
-            products and placing orders, an admin dashboard for managing
-            products and orders, and a driver interface for handling deliveries
-            and updating order statuses. The project focuses on providing a
-            smooth, organized, and user-friendly experience across all roles.
-          </p>
-          <a
-            href="https://www.figma.com/design/9t7F06Z6sshsRDg7ffZInw/Petopia-Project?node-id=0-1&t=mkKGj4asWL5C22On-1"
-            target="_blank"
-            ><button class="show-btn">Show Project</button></a
-          >
-        </div>
-
-        <div class="card">
-          <img src="assets/images/Projects/pizza-shop-project.png" alt="" />
-          <h4>Pizza Shop Project</h4>
-          <p>
-            A simple
-            <span style="font-weight: bold">desktop application</span> developed
-            in <span style="font-weight: bold">C#</span> for ordering pizza.
-            Users can choose the pizza size and flavor, view the calculated
-            price, and add multiple orders within the same session. The app
-            focuses on clean functionality, easy navigation, and a
-            straightforward ordering experience.
-          </p>
-          <a
-            href="https://github.com/BushraKawikji/c--projects/tree/main/worksheet%231"
-            target="_blank"
-            ><button class="show-btn">Show Project</button></a
-          >
-        </div>
-
-        <div class="card">
-          <img src="assets/images/Projects/countries-project.png" alt="" />
-          <h4>Countries Project</h4>
-          <p>
-            A simple
-            <span style="font-weight: bold">desktop application</span> built
-            using <span style="font-weight: bold">C#</span> that allows users to
-            add countries to a list, delete selected entries, and view the
-            removed items. The project focuses on basic data handling, clean
-            interface design, and smooth user interaction for managing and
-            tracking list changes.
-          </p>
-          <a
-            href="https://github.com/BushraKawikji/c--projects/tree/main/workSheet%232"
-            target="_blank"
-            ><button class="show-btn">Show Project</button></a
-          >
-        </div>
+      <div class="card">
+        <img src="assets/images/certificates/UXUI-certificate.png" alt="" />
+        <h4>UI/UX | Zain Zinc <i class="fa-brands fa-flutter"></i></h4>
+        <a href="https://coursat.orange.jo/mod/customcert/view.php?id=198&downloadown=1" target="_blank"><button
+            class="show-btn">Show Certificate</button></a>
       </div>
-    </section>
 
-    <!---------------------------------------- Volunteering Section ---------------------------------------->
-    <fieldset>
-      <legend>Volunteering</legend>
-    </fieldset>
-
-    <section class="volunteering" id="volunteering">
-      <div class="vol-flex">
-        <div class="vol-card">
-          <div class="img-grid">
-            <img src="assets/images/volunteering/forum1.jpg" alt="" />
-            <img src="assets/images/volunteering/forum2.jpg" alt="" />
-            <img src="assets/images/volunteering/forum3.jpg" alt="" />
-            <img src="assets/images/volunteering/forum4.jpg" alt="" />
-            <img src="assets/images/volunteering/forum5.jpg" alt="" />
-            <img src="assets/images/volunteering/forum6.jpg" alt="" />
-            <img src="assets/images/volunteering/forum7.jpg" alt="" />
-            <img src="assets/images/volunteering/forum8.jpg" alt="" />
-          </div>
-          <div>
-            <h4>Content Officer | IT & AI Forum</h4>
-            <p>
-              As the Content Officer for the ITÂIF Forum, I was in charge of
-              designing the forum’s main content structure, including defining
-              the key segments and discussion themes. My responsibilities also
-              included selecting and coordinating with speakers, building a
-              clear and well-organized agenda, leading the content team, and
-              overseeing rehearsals to ensure smooth alignment. On the event
-              day, I managed all content-related operations on stage and behind
-              the scenes to ensure a seamless and impactful experience.
-            </p>
-          </div>
-        </div>
-
-        <div class="vol-card">
-          <div class="img-grid">
-            <img src="assets/images/volunteering/vol.jpg" alt="" />
-            <img src="assets/images/volunteering/vol2.jpg" alt="" />
-            <img src="assets/images/volunteering/vol3.jpg" alt="" />
-          </div>
-          <div>
-            <h4>Member | IT Zone Plus</h4>
-            <p>
-              I have been volunteering with the IT Zone Plus team for two years,
-              actively participating in various activities and helping organize
-              multiple events and initiatives — and I’m still part of the team.
-            </p>
-          </div>
-        </div>
+      <div class="card">
+        <img src="assets/images/certificates/sigma-certificate.png" alt="" />
+        <h4>UI/UX | Sigma Agency</h4>
+        <a href="https://drive.google.com/file/d/1_x3EaERXVka9QqFRmLOxe8lMficftZEL/view?usp=drive_link"
+          target="_blank"><button class="show-btn">Show Certificate</button></a>
       </div>
-    </section>
+  </section>
 
-    <!---------------------------------------- Footer Section ---------------------------------------->
+  <!---------------------------------------- Experience Section ---------------------------------------->
 
-    <footer>
-      <div class="contact" id="contact">
-        <h3 class="contact-txt">Contact Me</h3>
-        <a href="mailto:bushrakawikji@gmail.com">
-          <i class="fa-solid fa-envelope"></i>
-          bushrakawikji@gmail.com
-        </a><br>
-        <a href="tel:962796503143">
-          <i class="fa-solid fa-phone"></i>
-          +962 79 650 3143
-        </a><br>
-        <i class="fa-brands fa-linkedin" style="color: rgb(2, 2, 162)"></i>
-        <a href="https://www.linkedin.com/in/bushra-qaweqji/" target="_blank"
-          >LinkedIn</a><br>
-        <p class="footer-copy">
-          <i class="fa-regular fa-copyright"></i> 2025 Bushra Qaweqji. All rights reserved.
-        </p>
+  <section class="timeline" id="experiences">
+    <h2>Experiences</h2>
+    <div class="exp-container left">
+      <div class="exp-txt">
+        <h3>Full-Stack Web Developer <span>Internship</span></h3>
+        <h4>Orange</h4>
+        <small>Oct/2025 - Jan/2026</small>
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="exp-container right">
+      <div class="exp-txt">
+        <h3>Content Officer <span>Volunteering</span></h3>
+        <h4>ITAIF</h4>
+        <small>Jan/2025 - Sep/2025</small>
+      </div>
+    </div>
+    <div class="exp-container left">
+      <div class="exp-txt">
+        <h3>Back-end Web Developer <span>Internship</span></h3>
+        <h4>Cirrusgo</h4>
+        <small>May/2025 – July/2025</small>
+      </div>
+    </div>
+    <div class="exp-container right">
+      <div class="exp-txt">
+        <h3>QA Manual Engineer <span>Internship</span></h3>
+        <h4>Futeric</h4>
+        <small>Mar/2025 – Jun/2025</small>
+      </div>
+    </div>
+
+  </section>
+  <!-- -------------------------------------- Projects Section ---------------------------------------->
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="cards-flex">
+      <div class="card">
+        <img src="assets/images/Projects/masar-project.png" alt="" />
+        <h4>Reservation System</h4>
+        <a href="https://github.com/lanaThaher/masarApp.git" target="_blank"><button class="show-btn">Show
+            Project</button></a>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/Projects/khazanti-project.png" alt="" />
+        <h4>Outfit Mobile Design</h4>
+        <a href="https://www.figma.com/design/msWy5dwFWcIzlKZAUyQ8aR/Khazanti?node-id=0-1&t=zMQTyl6K2Vz6KS9F-1"
+          target="_blank"><button class="show-btn">Show Project</button></a>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/Projects/petopia-project.png" alt="" />
+        <h4>Pet Shop Web Design</h4>
+        <a href="https://www.figma.com/design/9t7F06Z6sshsRDg7ffZInw/Petopia-Project?node-id=0-1&t=mkKGj4asWL5C22On-1"
+          target="_blank"><button class="show-btn">Show Project</button></a>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/Projects/pizza-shop-project.png" alt="" />
+        <h4>Pizza Shop System</h4>
+        <a href="https://github.com/BushraKawikji/c--projects/tree/main/worksheet%231" target="_blank"><button
+            class="show-btn">Show Project</button></a>
+      </div>
+    </div>
+  </section>
+
+  <!---------------------------------------- Footer Section ---------------------------------------->
+
+  <footer id="contact">
+    <div class="contact">
+      <h3 class="contact-txt">Contact Me</h3>
+
+      <a href="mailto:bushrakawikji@gmail.com" class="contact-icons" aria-label="Send me an email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+
+      <a href="tel:962796503143" class="contact-icons">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/bushra-qaweqji/" target="_blank" class="contact-icons">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/BushraKawikji" target="_blank" class="contact-icons">
+        <i class="fa-brands fa-github"></i>
+      </a>
+
+      <p class="footer-copy">
+        <i class="fa-regular fa-copyright" style="color: grey"></i>All rights
+        reserved. Bushra Qaweqji.
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>

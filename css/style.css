@@ -11,17 +11,15 @@ html {
   scroll-behavior: smooth;
 }
 
-img {
-  width: 300px;
-  height: 150px;
-  object-fit: cover;
-}
-
 body {
   background-color: var(--background-color);
 }
 
-/* ---------------- Header ---------------- */
+/* ---------------------------------------------- Header -------------------------------------- */
+::selection {
+  background-color: var(--hover-color);
+  color: white;
+}
 
 header {
   display: flex;
@@ -49,22 +47,52 @@ nav a:hover {
   color: var(--hover-color);
 }
 
-/* ---------------- Home Section ---------------- */
+/* ------------------------------------------------ Hero Section --------------------------------- */
 
 .home {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  padding: var(--section-padding);
-  gap: var(--gap);
+  height: 100vh;
 }
 
+.personal-photo {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--border-color);
+  transition: var(--transition);
+  /* animation: float 3s ease-in-out infinite; */
+}
+
+.personal-photo:hover {
+  transform: scale(1.03);
+  box-shadow: -10px 10px 20px var(--pink-color);
+}
+
+/* @keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px); 
+  }
+  100% {
+    transform: translateY(0); 
+  }
+} */
+
 .home-description {
-  color: var(--color);
+  display: flex;
+  flex-direction: column;
+}
+
+.home-description small {
+  color: grey;
 }
 
 .home-description h1 {
-  margin-bottom: 0.5rem;
   transition: var(--transition);
 }
 
@@ -75,22 +103,30 @@ nav a:hover {
 .home-description h1:hover,
 .home-description h2:hover {
   transform: scale(1.05);
-  color: var(--pink-color);
+  color: var(--hover-color);
 }
 
 .home-description p {
-  width: 30rem;
+  max-width: 28rem;
   margin-top: var(--margin);
+  margin-bottom: var(--margin);
 }
 
+.home-description a {
+  align-self: center;
+}
+
+/* ------------- Button ------------- */
+
 .download-btn {
+  position: relative;
+  overflow: hidden;
   background-color: var(--btn-bg-color);
   border: none;
   color: var(--btn-font-color);
   padding: var(--padding);
   width: var(--btn-width);
   border-radius: var(--btn-radius);
-  margin-top: var(--margin);
   font-weight: bold;
   font-size: var(--font-size-lg);
   transition: var(--transition);
@@ -98,66 +134,77 @@ nav a:hover {
 }
 
 .download-btn:hover {
-  background-color: var(--btn-hover);
-  color: white;
   transform: scale(1.05);
-}
-
-.personal-photo {
-  width: 30rem;
-  height: 30rem;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid var(--border-color);
-  transition: var(--transition);
-}
-
-.personal-photo:hover {
-  transform: scale(1.2);
+  background-color: var(--btn-hover);
 }
 
 /* ---------------- Cards Section ---------------- */
 
+.education {
+  text-align: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: var(--padding);
+  /* margin: auto; */
+  border-radius: var(--card-radius);
+}
 .certificates,
 .projects,
-.volunteering {
-  padding: var(--section-padding);
-  padding-top: 0;
-  padding-bottom: 0;
+.timeline {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  text-align: center;
+  border-radius: var(--card-radius);
 }
 
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+section:not(#home) {
+  margin: 4rem 1rem;
+  padding: 1rem;
+}
+
+.cards-flex {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
   gap: var(--gap);
 }
 
 .card {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  padding: var(--padding);
-  margin: var(--margin);
-  width: 90%;
-  text-align: center;
-  transition: var(--transition);
-  border-radius: var(--card-radius);
-  gap: var(--gap);
-  margin-bottom: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: var(--gap);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  padding: var(--padding);
+  margin: var(--margin);
+  width: auto;
+  text-align: center;
+  /* transition: var(--transition); */
+  border-radius: var(--card-radius);
 }
 
-.card:hover {
-  transform: scale(1.05);
+.education-card i,
+.education-card h3,
+.education-card h4 {
+  margin-bottom: 0.75rem;
 }
 
 .card img {
-  width: 100%;
   border-radius: var(--card-img-radius);
   border: 1px solid var(--border-color);
-  margin-bottom: var(--margin);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.certificates .card img {
+  height: 10.5rem;
+  width: 15rem;
+  object-fit: cover;
+}
+
+.projects .card img {
+  height: 10.5rem;
+  width: 15rem;
+  object-fit: cover;
 }
 
 .card p {
@@ -171,17 +218,56 @@ nav a:hover {
   border-radius: var(--btn-radius);
   color: var(--color);
   padding: var(--padding);
-  margin-top: var(--margin);
   font-size: var(--font-size-md);
   font-weight: bold;
   transition: var(--transition);
   width: var(--card-btn-width);
+  margin-top: var(--margin);
 }
 
 .show-btn:hover {
   background-color: var(--btn-hover);
   transform: scale(1.05);
-  color: white;
+}
+
+mark {
+  background-color: var(--pink-color);
+  padding: 0.12rem;
+  border-radius: 0.25rem;
+  transition: var(--transition);
+}
+
+mark:hover {
+  background-color: var(--hover-color);
+  transform: scale(1.05);
+}
+
+.fa-graduation-cap {
+  font-size: 2rem;
+  margin-right: 0.3rem;
+  color: var(--pink-color);
+}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; /* for horizontal scroll */
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+/* Scroll thumb */
+::-webkit-scrollbar-thumb {
+  background: var(--pink-color);
+  border-radius: 10px;
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hover-color);
 }
 
 /* ------- fieldset ---------- */
@@ -190,7 +276,7 @@ fieldset {
   border-bottom: none;
   border-right: none;
   border-left: none;
-  border-color: var(--btn-bg-color);
+  border-top-color: var(--pink-color);
 }
 
 legend {
@@ -201,77 +287,135 @@ legend {
   font-size: var(--font-size-lg);
 }
 
-/* ---------------------------------Volunteering Cards------------------------------------------- */
+/* ---------------------------------Experience Timeline------------------------------------------- */
 
-.vol-flex {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap);
+.timeline {
+  position: relative;
+  margin: auto;
 }
 
-.vol-card {
-  display: flex;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+.timeline h2 {
+  margin-bottom: var(--margin);
+}
+
+.exp-container {
   padding: var(--padding);
-  margin: var(--margin);
+  position: relative;
+  width: 30%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: var(--card-radius);
-  align-items: center;
+}
+
+.exp-txt {
   transition: var(--transition);
 }
 
-.vol-card:hover {
+.exp-txt:hover {
   transform: scale(1.05);
 }
 
-.vol-card p {
-  width: 30rem;
-  margin-top: var(--margin);
+.exp-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.9rem;
+  height: 0.9rem;
+  background: #fff;
+  border-radius: 50%;
+  border: 3px solid var(--pink-color);
 }
 
-.img-grid {
-  width: 70%;
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+.left {
+  left: 19%;
+  border-right: 3px solid var(--pink-color);
+  border-bottom: 3px solid var(--pink-color);
 }
 
-.img-grid img {
-  width: 75%;
-  margin-bottom: 1rem;
-  border-radius: var(--card-img-radius);
-  border: 1px solid var(--border-color);
-  transition: var(--transition);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+.right {
+  left: 51%;
+  border-left: 3px solid var(--pink-color);
+  border-bottom: 3px solid var(--pink-color);
 }
 
-.img-grid img:hover {
-  transform: scale(1.05);
+.exp-txt span {
+  font-size: 0.5rem;
+}
+
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 61%;
+  background: var(--pink-color);
+  top: 6.25rem;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+.exp-container.left::before {
+  right: -1.5rem;
+}
+
+.exp-container.right::before {
+  left: -1.6rem;
+}
+
+.exp-txt small {
+  font-size: 0.75rem;
+  color: grey;
 }
 
 /* -------------------------------- Footer ------------------------------------------ */
 
 footer {
-  background-color: var(--pink-color);
-  padding: var(--padding);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 12px;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
   text-align: center;
+  padding: var(--padding);
+  height: auto;
+  margin-top: var(--margin);
 }
 
 .contact-txt {
   margin-bottom: var(--margin);
 }
 
-.contact a {
+.contact-icons {
+  display: inline-block;
+  border-radius: var(--icon-bg-radius);
+  height: var(--icon-bg-height);
+  width: var(--icon-bg-width);
+  padding: var(--icon-padding);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 20px 0px;
+  text-align: center;
+  margin: 0 0.5rem;
   transition: var(--transition);
 }
 
-.contact a:hover {
-  transform: scale(1.05);
+.contact-icons:hover {
+  transform: scale(1.1);
+}
+
+.contact-icons:hover i {
+  color: var(--hover-color);
+}
+
+.fa-envelope,
+.fa-phone,
+.fa-linkedin,
+.fa-github {
+  font-size: var(--icon-size);
+  color: var(--color);
 }
 
 .footer-copy {
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-size: var(--font-size-sm);
+  color: grey;
 }
 
 /* ==================================================== */
@@ -288,9 +432,8 @@ footer {
     --card-btn-width: 40vw;
   }
 
-  header nav a {
-    margin-left: 0.8rem;
-    font-size: 0.9rem;
+  header {
+    display: none;
   }
 
   .home {
