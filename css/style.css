@@ -256,7 +256,8 @@ mark:hover {
 
 /* Track (background) */
 ::-webkit-scrollbar-track {
-  background: var(--background-color);
+  background: rgb(243, 223, 227);
+  border-radius: 10px;
 }
 
 /* Scroll thumb */
@@ -459,9 +460,46 @@ footer {
     margin: 1rem 0;
   }
 
-  .vol-card {
-    flex-direction: column;
-    text-align: center;
+  .timeline {
+    grid-template-columns: 1fr; /* عمود واحد */
+    padding: 0 1.5rem; /* مساحة أقل من الجوانب */
+  }
+
+  .exp-container::after, .exp-container::before {
+    display: none;
+  }
+
+  .exp-container {
+    width: 100%; 
+    border-left: none; 
+    border-right: none;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    margin-bottom: 1rem;
+    border-radius: 0;
+  }
+
+
+ .exp-container.left {
+    justify-self: center;
+    text-align: left; 
+  }
+.exp-container.right {
+    justify-self: center;
+    text-align: left; 
+  }
+  .left,
+.right {
+  left: 0;
+  border: none;
+}
+
+.timeline::after {
+  display: none;
+}
+
+.exp-container {
+    border-left: 3px solid var(--pink-color); 
   }
 
   .img-grid {
